@@ -1,23 +1,39 @@
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
+import Navbar from './components/Navbar';
+import About from './components/About';
+import HeroSection from './components/HeroSection';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 import './App.css';
 
 function App() {
+  useEffect(() => {
+    const navbar = document.querySelector('.navbar');
+    const heroSection = document.querySelector('.hero-section');
+
+    const handleScroll = () => {
+      const heroHeight = heroSection.offsetHeight;
+      if (window.scrollY > heroHeight) {
+        navbar.classList.add('show');
+      } else {
+        navbar.classList.remove('show');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HeroSection />
+      <Navbar />
+      <About />
+      <Projects />
+      <Contact />
     </div>
   );
 }

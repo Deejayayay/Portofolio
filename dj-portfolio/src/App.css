@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+  background-blend-mode: screen;
+  padding: 10px;
+  z-index: 10;
+  opacity: 0; /* Initially invisible */
+  transform: translateY(-100%); /* Initially positioned above the viewport */
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out; /* Smooth transition */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar.show {
+  opacity: 1; /* Fully visible when scrolled past hero */
+  transform: translateY(0); /* Moves into view smoothly */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
   color: white;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-.App-link {
-  color: #61dafb;
+section {
+  height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-section {
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+.about-section {
+  background-color: #09203f;
+}
+
+.projects-section {
+  background-color: #09203f;
+}
+
+.contact-section {
+  background-color: #09203f;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+p, li {
+  font-size: 1.5rem;
 }
