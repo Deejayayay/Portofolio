@@ -1,67 +1,23 @@
+
+:root{
+  background: linear-gradient(135deg, #2C6E49 0%, #144D43 100%);
+}
+
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
   scroll-behavior: smooth;
 }
 
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
-  background-blend-mode: screen;
-  padding: 10px;
-  z-index: 10;
-  opacity: 0; /* Initially invisible */
-  transform: translateY(-100%); /* Initially positioned above the viewport */
-  transition: transform 0.4s ease-out, opacity 0.4s ease-out; /* Smooth transition */
-}
-
-.navbar.show {
-  opacity: 1; /* Fully visible when scrolled past hero */
-  transform: translateY(0); /* Moves into view smoothly */
-}
-
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.navbar li {
-  margin: 0 15px;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
 section {
   height: 100vh;
   padding: 50px 20px;
   display: flex;
+  border-width: 5px;
+  border: #144D43;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-
-.hero-section {
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
-}
-.about-section {
-  background-color: #09203f;
-}
-
-.projects-section {
-  background-color: #09203f;
-}
-
-.contact-section {
-  background-color: #09203f;
 }
 
 h1 {

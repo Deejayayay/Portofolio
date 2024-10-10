@@ -1,12 +1,16 @@
 import React from 'react';
-
+import './styles/Contact.css'
 function Contact() {
   return (
     <section id="contact" className="contact-section">
-      <h1>Contact Me</h1>
-      <p>
-        You can reach me via email at <a href="mailto:youremail@example.com">youremail@example.com</a>.
-      </p>
+      <form>
+      <h1>Let's Talk.</h1>
+        <input type='text' id='name' placeholder='name' required></input>
+        <input type='email' id='email' placeholder='email' required></input>
+        <h4>Type Your Message here</h4>
+        <textarea required></textarea>
+        <input type="submit" value="send" id="button"></input>
+      </form>
     </section>
   );
 }
