@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import './styles/HeroSection.css';
 import { animateText } from './scripts/animateText';
 
+
 function HeroSection() {
   const titleRef = useRef(null); // Create a ref to reference the h1 element
 
@@ -48,15 +49,20 @@ function HeroSection() {
   return (
     <section className="hero-section">
       <div className="hero-content">
-        <h1 ref={titleRef} data-value="Hello, I'm DJ">Hello, I'm <span className="highlight">DJ</span>.</h1>
-        <Link
-          to="projects"
-          smooth={true}
-          duration={500}
-          className="view-work-button"
-        >
-          Come View My Work <span>&#8595;</span>
-        </Link>
+        <div className="hero-text">
+          <h1 ref={titleRef} data-value="Hello, I'm [DJ]">Hello, I'm <span className="highlight">[DJ]</span>.</h1>
+          <Link
+            to="projects"
+            smooth={true}
+            duration={500}
+            className="view-work-button"
+          >
+            Come View My Work <span>&#8595;</span>
+          </Link>
+        </div>
+        <div className="hero-image">
+          <img src='/images/click.png' alt="Hero Section Image" />
+        </div>
       </div>
     </section>
   );

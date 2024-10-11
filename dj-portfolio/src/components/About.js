@@ -6,7 +6,7 @@ function About() {
       <h1>About Me</h1>
       <h2>Skills</h2>
       <p>
-        
+        asd
       </p>
     </section>
   );
