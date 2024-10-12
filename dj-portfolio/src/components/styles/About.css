@@ -1,0 +1,61 @@
+.about-section {
+    width: 100%;
+    
+    height: 100vh; /* Full screen height */
+    display: flex;
+    padding: 0 20px; /* Adds padding around the content */
+    flex-direction: row; /* Aligns the sections horizontally */
+    justify-content: space-between; /* Adds space between the skills and about section */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Aligns the text at the bottom */
+    width: 50%; /* Adjust this as needed to control the size of the About Me section */
+    padding-right: 200px; /* Adds spacing between the content and the edge */
+
+}
+
+.about-text {
+    flex: 1;
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+    align-self: flex-end; /* Ensures the text is aligned properly on the right side */
+}
+
+.about-text h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    text-align: left; /* Aligns the title to the left */
+}
+
+.skills-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows the icons to wrap within the content box */
+    width: 375px; /* Adjust this for the desired width */
+    align-self: flex-start; /* Aligns the skills icons to the top */
+    margin-left: 50px; /* Adds spacing from the left side */
+    justify-content: center; /* Centers the icons horizontally */
+    margin-top: 150px;
+    margin-left: 300px;
+
+}
+
+.skills-content h1 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%; /* Ensures the heading spans full width */
+}
+
+.skills-content img {
+    margin: 10px;
+    width: 160px; /* Increased width for a larger rectangular shape */
+    height: 100px; /* Increased height for a larger rectangular shape */
+    border-radius: 10px; /* Optional: rounded corners */
+    object-fit: contain; /* Ensures the image fits within the dimensions without distorting */
+}

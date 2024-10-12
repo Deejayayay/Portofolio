@@ -3,7 +3,6 @@ import { Link } from 'react-scroll';
 import './styles/HeroSection.css';
 import { animateText } from './scripts/animateText';
 
-
 function HeroSection() {
   const titleRef = useRef(null); // Create a ref to reference the h1 element
 
@@ -61,7 +60,7 @@ function HeroSection() {
           </Link>
         </div>
         <div className="hero-image">
-          <img src='/images/click.png' alt="Hero Section Image" />
+          <img src='https://static-00.iconduck.com/assets.00/games-batman-icon-2048x2048-zjmbyc6b.png'  alt='batman'/>
         </div>
       </div>
     </section>
