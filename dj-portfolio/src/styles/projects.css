@@ -7,3 +7,44 @@
     align-items: center; 
     text-align: center; 
 }
+
+.bento{
+    width: 1500px;
+    height: 750px;
+    border-radius: 1em;
+    padding: 2em;
+    display: flex;
+    gap: 1em;
+}
+
+.row{
+    outline: 2px dashed red;
+    border-radius: 1em;
+}
+
+.row-1{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+.row-2{
+    flex: 1;
+}
+
+.row-3{
+    flex: 1;
+}
+
+.col{
+    outline: 2px dashed yellow;
+    flex: 1;
+    border-radius: 1em;
+}
+
+.col.col-2{
+    flex: 1;
+}
+.col-box{
+    outline: 2px dashed pink;
+}
