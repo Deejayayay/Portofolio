@@ -1,11 +1,8 @@
-@font-face {
-    font-family: 'MyCustomFont';
-    src: url('../fonts/Tungsten\ Font') format('woff2'),
-         url('./fonts/MyCustomFont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+*{
+    font-family: "Oswald", sans-serif;
+    background-color: var(--secondary-background-color);
+    color: var(--primary-color);
 }
-
 
 
 :root{
@@ -15,7 +12,6 @@
     --secondary-accent-color: rgb(110, 100, 79);
     --primary-background-color: black;
     --secondary-background-color: rgb(16, 16 , 27);
-    --primary-text-color: white:
 }
 
 
