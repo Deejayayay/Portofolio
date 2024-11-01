@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('../fonts/Tungsten\ Font') format('woff2'),
+         url('./fonts/MyCustomFont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 :root{
     --primary-color: rgb(207, 186, 129);
     --secondary-color: rgb(90, 17, 157);
@@ -7,3 +17,5 @@
     --secondary-background-color: rgb(16, 16 , 27);
     --primary-text-color: white:
 }
+
+
