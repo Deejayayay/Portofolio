@@ -18,7 +18,7 @@
 }
 
 .row{
-    outline: 2px dashed red;
+
     border-radius: 1em;
 }
 
@@ -26,6 +26,7 @@
     display: flex;
     flex: 2;
     flex-direction: column;
+    gap: 1em;
 }
 
 .row-2{
@@ -37,14 +38,63 @@
 }
 
 .col{
-    outline: 2px dashed yellow;
     flex: 1;
     border-radius: 1em;
+    display: flex;
 }
 
 .col.col-2{
-    flex: 1;
+    flex: 1
+    display flex;
+    flex-direction: column;
+    gap: 1em;
 }
+
 .col-box{
-    outline: 2px dashed pink;
+    flex: 1;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #ffffff10;
+    border-radius: 1em;
+    transition: transform 0.2s ease-in, border 0.2s ease-in
+}
+
+.col-box:hover{
+    transform: scale(1.02);
+    border: 2px solid #ffffff10;
+}
+@media(max-width:1024px){
+    .project-container{
+        flex-direction: column;
+    }
+
+    .row-1{
+        flex-direction: row;
+    }
+
+    .row-2{
+        flex-direction: row;
+    }
+
+    .row-3{
+        flex-direction: row;
+    }
+
+    .col{
+        flex: 2;
+        flex-direction: column;
+    }
+}
+
+@media(max-width:650px) {
+    .project-container{
+        max-width: 900px;
+        max-height: 550px;
+        gap: 0.5em;
+    }
+    .row{
+        gap: 0.5em;
+    }
+    .col{
+        gap: 0.5em;
+    }
 }
