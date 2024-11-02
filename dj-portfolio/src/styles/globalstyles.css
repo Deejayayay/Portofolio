@@ -1,20 +1,57 @@
-*{
-    font-family: "Oswald", sans-serif;
-    background-color: var(--secondary-background-color);
-    color: var(--primary-color);
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
 :root{
     --primary-color: rgb(207, 186, 129);
-    --secondary-color: rgb(90, 17, 157);
-    --primary-accent-color: rgb(201, 63, 59);
     --secondary-accent-color: rgb(110, 100, 79);
     --primary-background-color: black;
     --secondary-background-color: rgb(16, 16 , 27);
 }
 
+*{
+    font-family: "Oswald", sans-serif;
+    color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 
+}
+
+body, html {
+    margin: 0; /* Reset margin to prevent unwanted space */
+    height: 100%; /* Ensure body takes full height */
+    overflow: hidden; /* Prevents background jump on scroll */
+}
+  
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #2c3e3f, #1a2526, #1e3b3b);
+    background-size: 200% 200%;
+    animation: moveGradient 5s ease infinite;
+    z-index: -1; /* Keeps it behind other content */
+  }
+
+@keyframes moveGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .app{
+    position: relative; /* Positions relative to fixed background */
+    overflow-y: auto; /* Enables vertical scrolling */
+    height: 100vh; /* Fill the full viewport height */
+    padding: 20px; /* Optional: Adds some padding for aesthetics */
+  }
+
+  .app::-webkit-scrollbar {
+    display: none; /* Hides scrollbar */
+  }
+  
+  /* Hide scrollbar for Firefox */
+  .app {
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+  }

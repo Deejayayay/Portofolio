@@ -2,8 +2,43 @@
     width: 100%; 
     height: 100vh; /* Full viewport height */
     display: flex; 
-    flex-direction: column; 
+
     justify-content: center; 
     align-items: center; 
     text-align: center; 
+}
+
+.bento-about{
+    outline: dashed 2px orange;
+    width: 1200px;
+    height: 750px;
+    border-radius: 1em;
+    padding: 1em;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+
+.col-1{
+    flex: 1;
+    outline: dashed 2px purple;
+    border-radius: 1em;
+}
+
+.col-2{
+    display: flex;
+    flex: 1;
+    outline: dashed 2px purple;
+    border-radius: 1em;
+}
+
+.col-3{
+    flex: 1;
+    outline: dashed 2px purple;
+    border-radius: 1em;
+}
+
+.box{
+    flex: 1;
+    outline: dashed 2px floralwhite;
 }

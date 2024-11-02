@@ -1,7 +1,6 @@
 
 //styles
 import './styles/globalstyles.css'
-import './styles/app.css'
 
 //pages
 import Hero from './pages/hero'

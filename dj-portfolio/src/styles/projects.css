@@ -9,7 +9,7 @@
 }
 
 .bento{
-    width: 1500px;
+    width: 1200px;
     height: 750px;
     border-radius: 1em;
     padding: 2em;
@@ -61,40 +61,4 @@
 .col-box:hover{
     transform: scale(1.02);
     border: 2px solid #ffffff10;
-}
-@media(max-width:1024px){
-    .project-container{
-        flex-direction: column;
-    }
-
-    .row-1{
-        flex-direction: row;
-    }
-
-    .row-2{
-        flex-direction: row;
-    }
-
-    .row-3{
-        flex-direction: row;
-    }
-
-    .col{
-        flex: 2;
-        flex-direction: column;
-    }
-}
-
-@media(max-width:650px) {
-    .project-container{
-        max-width: 900px;
-        max-height: 550px;
-        gap: 0.5em;
-    }
-    .row{
-        gap: 0.5em;
-    }
-    .col{
-        gap: 0.5em;
-    }
 }
