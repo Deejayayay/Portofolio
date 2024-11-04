@@ -8,12 +8,9 @@ const Projects: React.FC = () => {
             <div className="bento">
                 <div className="row row-1">
                     <div className="col">
-                        <div className="col-box"></div>
-                    </div>
-
-                    <div className="col col-2">
-                        <div className="col-box"></div>
-                        <div className="col-box"></div>
+                        <div className="col-box">
+                            dasd
+                        </div>
                     </div>
                 </div>
                 <div className="row row-1">
@@ -21,20 +18,10 @@ const Projects: React.FC = () => {
                     <div className="col">
                         <div className="col-box"></div>
                     </div>
-
-                    <div className="col col-2">
-                        <div className="col-box"></div>
-                        <div className="col-box"></div>
-                    </div>
                 </div>
                 </div>
                 <div className="row row-1">
-                <div className="col">
-                        <div className="col-box"></div>
-                    </div>
-
-                    <div className="col col-2">
-                        <div className="col-box"></div>
+                    <div className="col">
                         <div className="col-box"></div>
                     </div>
                 </div>

@@ -21,20 +21,17 @@
     border-radius: 1em;
 }
 
-.row-1{
+.row.row-1{
     display: flex;
     flex: 2;
     flex-direction: column;
     gap: 1em;
 }
 
-.row-2{
+.row.row-2{
     flex: 1;
 }
 
-.row-3{
-    flex: 1;
-}
 
 .col{
     flex: 1;
@@ -50,7 +47,7 @@
 }
 
 .col-box{
-    flex: 1;
+    flex: 2;
     background: rgba(255, 255, 255, 0.15);
     border: 2px solid #ffffff10;
     border-radius: 1em;
