@@ -16,9 +16,9 @@
 }
 
 body, html {
-    margin: 0; /* Reset margin to prevent unwanted space */
     height: 100%; /* Ensure body takes full height */
     overflow: hidden; /* Prevents background jump on scroll */
+    scroll-behavior: smooth;
 }
   
 body::before {

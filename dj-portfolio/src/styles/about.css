@@ -9,7 +9,6 @@
 }
 
 .bento-about{
-    outline: dashed 2px orange;
     width: 1200px;
     height: 750px;
     border-radius: 1em;
@@ -19,26 +18,116 @@
     flex-direction: column;
 }
 
+/* +===========col 1===========+ */
 .col-1{
-    flex: 1;
-    outline: dashed 2px purple;
-    border-radius: 1em;
-}
-
-.col-2{
     display: flex;
     flex: 1;
-    outline: dashed 2px purple;
+    gap: 1em;
+
+    border-radius: 1em;
+}
+.col-1.square-1{
+    display: flex;
+    flex: 2;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #ffffff10;
     border-radius: 1em;
 }
 
+.col-1.square-2{
+    display: flex;
+    flex: 2;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #ffffff10;
+    border-radius: 1em;
+}
+
+.col-1.square-3{
+    display: flex;
+    flex: 1;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #ffffff10;
+    border-radius: 1em;
+}
+
+
+/* +========================+ */
+
+/* +============col 2============+ */
+.col-2{
+    display: flex;
+    flex: 1.5;
+
+    border-radius: 1em;
+    gap: 1em;
+}
+
+.col-2.box-1{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+}
+
+.col-2.box-2{
+    flex: 1;
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.col-2.box-3{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #ffffff10;
+}
+
+.col-2.square-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #ffffff10;
+}
+
+.col-2.square-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #ffffff10;
+}
+/* +========================+ */
+
+/* +===========col 3=============+ */
 .col-3{
+    display: flex;
+    gap: 1em;
     flex: 1;
-    outline: dashed 2px purple;
     border-radius: 1em;
 }
 
-.box{
+.col-3.square-1{
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #ffffff10;
+    flex: 2;
+}
+
+.col-3.square-2{
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #ffffff10;
     flex: 1;
-    outline: dashed 2px floralwhite;
+}
+/* +========================+ */
+
+.github-icon{
+    width: 250px;
+}
+.linkedin-icon{
+    width: 100px;  
 }
