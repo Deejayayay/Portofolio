@@ -4,29 +4,15 @@ import '../styles/projects.css'
 const Projects: React.FC = () => {
     return(
         <div className='project-container'>
-            <h1>Projects</h1>
-            <div className="bento">
-                <div className="row row-1">
-                    <div className="col">
-                        <div className="col-box">
-                            dasd
-                        </div>
-                    </div>
+            <div className="project-1">
+                <div className="project-img">
+                    <img src="" alt="" />
                 </div>
-                <div className="row row-1">
-                <div className="row row-1">
-                    <div className="col">
-                        <div className="col-box"></div>
-                    </div>
-                </div>
-                </div>
-                <div className="row row-1">
-                    <div className="col">
-                        <div className="col-box"></div>
-                    </div>
+
+                <div className="project-text">
+                    <p>Lorem</p>
                 </div>
             </div>
-
         </div>
     );
 };

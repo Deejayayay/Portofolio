@@ -8,53 +8,8 @@
     text-align: center; 
 }
 
-.bento{
-    width: 1200px;
-    height: 750px;
-    border-radius: 1em;
-    padding: 2em;
+
+.project-1{
     display: flex;
-    gap: 1em;
-}
-
-.row{
-    border-radius: 1em;
-}
-
-.row.row-1{
-    display: flex;
-    flex: 2;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.row.row-2{
-    flex: 1;
-}
-
-
-.col{
-    flex: 1;
-    border-radius: 1em;
-    display: flex;
-}
-
-.col.col-2{
-    flex: 1
-    display flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.col-box{
-    flex: 2;
-    background: rgba(255, 255, 255, 0.15);
-    border: 2px solid #ffffff10;
-    border-radius: 1em;
-    transition: transform 0.2s ease-in, border 0.2s ease-in
-}
-
-.col-box:hover{
-    transform: scale(1.02);
-    border: 2px solid #ffffff10;
+    border: red;
 }
